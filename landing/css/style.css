@@ -1,0 +1,79 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 5px 10px;
+  text-align: center;
+  font-family: Open Sans;
+  background-color: #BBBBBB;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+  color:whitesmoke
+}
+
+h2 {
+  color: black
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+/* Custom design below! */
+
+.avatar {
+  margin: 10px;
+  width: 150px;
+  border-radius: 50%;
+  border: rgb(250, 249, 249) 5px solid;
+}
+
+.info {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+}
+
+.info-category {
+  background-size: cover;
+  background-position: center;
+  height: 125px;
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .info {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
